@@ -1,0 +1,26 @@
+/*-------------------------------------------------------------------
+
+                        RESPONSIVE
+
+-------------------------------------------------------------------*/
+
+@media (min-width: 1500px) {
+  .portfolio-block {
+    transform: rotate(-29deg);
+    left: 988px;
+    top: 271px;
+  }
+
+  .portfolio-block:hover {
+    border: 15px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .portfolio-block-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 108px 0 0 50px;
+    -ms-transform: rotate(29deg);
+    -webkit-transform: rotate(29deg);
+    transform: rotate(29deg);
+  }
+}

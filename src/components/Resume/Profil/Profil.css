@@ -1,0 +1,25 @@
+.center {
+  margin: 5px auto 5px auto;
+}
+
+.info-list {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 20px 0;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-list span {
+  color: #333;
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.info-list div {
+  padding-left: 0;
+  padding-right: 0;
+}

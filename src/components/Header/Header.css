@@ -1,0 +1,156 @@
+.name-block {
+  position: absolute;
+  z-index: 1;
+}
+
+.name-block-container h1 {
+  font-size: 50px;
+}
+
+.name-block-container h1,
+.name-block-container h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.name-block-container h2 {
+  font-size: 24px;
+  min-height: 26px;
+}
+
+.name-block-container h1 span {
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+  text-transform: capitalize;
+}
+
+/*Reverse*/
+
+.name-block.reverse {
+  position: absolute;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  width: 30%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: none;
+  display: table;
+}
+
+.name-block-container.reverse {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  padding: 0 30px;
+}
+
+/*-------------------------------------------------------------------
+
+                        RESPONSIVE
+
+-------------------------------------------------------------------*/
+@media (min-width: 1500px) {
+  .name-block {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    display: table;
+    transform: rotate(-29deg);
+    transition: all 0.5s;
+    z-index: 1;
+    left: 245px;
+    top: 137px;
+  }
+  .name-block-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 150px;
+    -ms-transform: rotate(29deg);
+    -webkit-transform: rotate(29deg);
+    transform: rotate(29deg);
+  }
+  .name-block-container h1 {
+    font-size: 50px;
+  }
+  .name-block-container h1,
+  .name-block-container h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  h1 {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .name-block-container h2 {
+    font-size: 24px;
+    min-height: 26px;
+  }
+
+  .name-block-container h1 span {
+    font-size: 26px;
+    font-weight: 300;
+    display: block;
+    text-transform: capitalize;
+  }
+  /*Reverse*/
+
+  .name-block.reverse {
+    position: absolute;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    height: 100%;
+    top: 0;
+    border: none;
+    display: table;
+    width: 465px;
+    left: 300px;
+  }
+
+  .name-block-container.reverse {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    padding: 0 30px;
+  } 
+}
+
+@media (min-width: 708px) and (max-width: 1199px) {
+  .name-block {
+    left: 20%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .name-block {
+    left: 25%;
+  }
+}

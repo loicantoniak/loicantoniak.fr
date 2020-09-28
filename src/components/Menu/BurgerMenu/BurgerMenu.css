@@ -1,0 +1,90 @@
+.burger-button {
+  position: absolute;
+  top: 20%;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1.7rem;
+  height: 1.3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+.burger-button:focus {
+  outline: none;
+}
+
+.burger-button .bar {
+  width: 1.4rem;
+  height: 2px;
+  background: #666;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.burger-button .bar:first-child {
+  transform: rotate(45deg);
+}
+
+.burger-button .bar:nth-child(2) {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.burger-button .bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.cross-button {
+  position: absolute;
+  top: 20%;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1.7rem;
+  height: 1.3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.cross-button:focus {
+  outline: none;
+}
+
+.cross-button .bar {
+  width: 1.5rem;
+  height: 2px;
+  background: #666;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.cross-button .bar:first-child {
+  transform: rotate(0);
+}
+
+.cross-button.bar:nth-child(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.cross-button .bar:nth-child(3) {
+  transform: rotate(0);
+}
+
+@media (min-width: 650px) {
+  .burger-button, .cross-button {
+    display: none;
+  }
+}

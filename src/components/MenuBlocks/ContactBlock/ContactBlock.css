@@ -1,0 +1,26 @@
+/*-------------------------------------------------------------------
+
+                        RESPONSIVE
+
+-------------------------------------------------------------------*/
+
+@media (min-width: 1500px) {
+  .contact-block {
+    transform: rotate(-29deg);
+    left: 1132px;
+    top: 533px;
+  }
+
+  .contact-block:hover {
+    border: 15px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .contact-block-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 88px 0 0 72px;
+    -ms-transform: rotate(29deg);
+    -webkit-transform: rotate(29deg);
+    transform: rotate(29deg);
+  }
+}

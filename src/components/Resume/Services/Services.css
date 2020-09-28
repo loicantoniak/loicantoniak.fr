@@ -1,0 +1,15 @@
+.service {
+    text-align: center;
+    padding-top: 25px;
+  }
+  
+  .service h4 {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .service-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #666;
+  }

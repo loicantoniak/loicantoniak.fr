@@ -1,0 +1,31 @@
+label {
+  display: inline-block;
+}
+
+.progress-bar-label {
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 2px;
+  margin-bottom: 30px;
+  background-color: #ddd;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+  width: 90%;
+}
+
+.pourcent {
+  text-align: center;
+  color: #000;
+  background: #f1f3f6;
+  font-weight: 500;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  top: -18px;
+}

@@ -1,0 +1,60 @@
+/* Buttons */
+.downloadButton {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.btn-download {
+  border: 2px solid #fff;
+  font-size: 16px;
+  padding: 15px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.35s;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.btn-download:hover {
+  border: 2px solid #333;
+  color: #fff;
+}
+
+.btn-download::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #333;
+  transition: all 0.5s;
+}
+
+.btn-download:hover::after {
+  width: 100%;
+}
+
+.btn.disabled {
+  opacity: 1;
+}
+
+.btn-download > span {
+    z-index: 2;
+    position: relative;
+}
+
+
+
+/*-------------------------------------------------------------------
+
+                        RESPONSIVE
+
+-------------------------------------------------------------------*/
+
+@media (min-width: 1500px) {
+  .downloadButton {
+    text-align: left;
+  }
+}

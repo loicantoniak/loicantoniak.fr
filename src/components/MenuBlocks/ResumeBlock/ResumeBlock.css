@@ -1,0 +1,26 @@
+/*-------------------------------------------------------------------
+
+                        RESPONSIVE
+
+-------------------------------------------------------------------*/
+
+@media (min-width: 1500px) {
+  .about-block {
+    transform: rotate(-29deg);
+    left: 843px;
+    top: 9px;
+  }
+
+  .about-block:hover {
+    border: 15px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .about-block-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 150px 0 0 70px;
+    -ms-transform: rotate(29deg);
+    -webkit-transform: rotate(29deg);
+    transform: rotate(29deg);
+  }
+}

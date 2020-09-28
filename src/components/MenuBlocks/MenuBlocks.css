@@ -1,0 +1,138 @@
+@media (max-width: 1499px) {
+
+  .about-block,
+  .portfolio-block,
+  .contact-block {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: table;
+    left: 0;
+    top: 400px;
+    z-index: 3;
+  }
+
+  .about-block {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  h2.about.menu-item:before {
+    content: "01";
+  }
+
+  h2.portfolio.menu-item:before {
+    content: "02";
+  }
+
+  h2.contact.menu-item:before {
+    content: "03";
+  }
+
+  h2.blog-block-menu.menu-item:before {
+    content: "04";
+  }
+
+  .menu-block:hover h2.menu-item:before {
+    top: -20px;
+    left: -40px;
+  }
+
+  .menu-block:hover h2.menu-item:after {
+    top: 12px;
+    left: -40px;
+  }
+
+  h2.menu-item {
+    position: relative;
+    color: #fff;
+    margin: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    transition: all 1s ease-out;
+  }
+
+  .menu-item {
+    cursor: pointer;
+  }
+
+  h2.menu-item:before {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  }
+
+  h2.menu-item:after {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: -20px;
+    width: 70px;
+    height: 1px;
+    background: #fff;
+    transition: all 0.5s ease;
+  }
+}
+
+/*-------------------------------------------------------------------
+
+                        RESPONSIVE
+
+-------------------------------------------------------------------*/
+
+@media (min-width: 1500px) {
+  .menu-block {
+    position: absolute;
+    width: 430px;
+    height: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: table;
+    transition: all 0.5s;
+    z-index: 99;
+  }
+
+  .menu-block:hover h2.menu-item:before {
+    top: -20px;
+    left: -40px;
+  }
+
+  .menu-block:hover h2.menu-item:after {
+    top: 12px;
+    left: -40px;
+  }
+
+  h2.menu-item {
+    position: relative;
+    color: #fff;
+    margin: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    transition: all 1s ease-out;
+  }
+
+  .menu-item {
+    cursor: pointer;
+  }
+
+  h2.menu-item:before {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  }
+
+  h2.menu-item:after {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: -20px;
+    width: 70px;
+    height: 1px;
+    background: #fff;
+    transition: all 0.5s ease;
+  }
+}

@@ -1,13 +1,141 @@
-body {
+/* -------------------------------------------------------------------
+
+                        General Styles
+
+-------------------------------------------------------------------*/
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font: 400 14px "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 30px;
+  color: #727272;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2.2;
+  overflow-x: hidden;
 }
+
+a {
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a[href^="tel:"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+/* texts */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-size: 15px;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+strong,
+small {
+  color: #333;
+}
+
+/* Buttons */
+
+.btn {
+  border: 2px solid transparent;
+  padding: 12px 28px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s;
+  position: relative;
+  color: #fff;
+  background-color: #333;
+  z-index: 20;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: #666;
+  background-color: #fff;
+  border: 2px solid #333;
+  letter-spacing: 3px;
+}
+
+.btn:focus {
+  box-shadow: none;
+  color: #fff;
+  outline: none;
+}
+

@@ -1,0 +1,36 @@
+ul.unstyled {
+    list-style: none;
+    padding-left: 0;
+}
+
+.filters {
+    padding-bottom: 30px;
+}
+
+.filters span {
+    display: inline-block;
+    margin-right: 15px
+}
+
+.filters ul {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.filters ul li {
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 15px;
+    padding: 2px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filters ul li.active,
+.filters ul li:hover {
+    color: #333;
+}
+
+.filters ul li:first-child {
+    margin-left: 0;
+}

@@ -1,0 +1,157 @@
+
+/*.icon-list li {
+  padding-left: 25px;
+}
+
+.icon-list li:before {
+  position: absolute;
+  font-size: 24px;
+  left: 20px;
+  color: #666;
+}
+*/
+
+.timeline {
+  position: relative;
+}
+
+
+.exp {
+  padding: 20px 20px 0 0;
+  position: relative;
+}
+
+
+.exp .hgroup h4,
+.exp .hgroup h5 {
+  display: table-cell;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+
+.exp .hgroup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exp .hgroup h4 span {
+  color: #666;
+}
+
+.exp .hgroup h5 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+  color: #727272;
+  padding-left: 10px;
+  position: relative;
+}
+
+
+.icon {
+  display: none;
+}
+
+/*-------------------------------------------------------------------
+
+                        RESPONSIVE
+
+-------------------------------------------------------------------*/
+@media (min-width: 650px) {
+  .icon-list li {
+    padding-left: 25px;
+  }
+
+  .icon-list li:before {
+    position: absolute;
+    font-size: 24px;
+    left: 20px;
+    color: #666;
+  }
+
+  .timeline {
+    position: relative;
+  }
+
+  .timeline:before {
+    background: #ddd;
+    bottom: 0;
+    content: "";
+    left: 18px;
+    position: absolute;
+    top: 50px;
+    width: 1px;
+    height: 95%;
+  }
+
+  .timeline:after {
+    top: 0;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    color: #ddd;
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .exp {
+    padding: 20px 20px 0 80px;
+    position: relative;
+  }
+
+  .exp:after {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    left: 9px;
+    position: absolute;
+    text-align: center;
+    top: 24px;
+    width: 20px;
+  }
+
+  .exp .hgroup h4,
+  .exp .hgroup h5 {
+    display: table-cell;
+    text-transform: none;
+    margin-bottom: 10px;
+  }
+
+  .exp .hgroup {
+    margin-bottom: 5px;
+  }
+
+  .exp .hgroup h4 span {
+    color: #666;
+  }
+
+  .exp .hgroup h5 {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    color: #727272;
+    padding-left: 60px;
+    position: relative;
+  }
+
+  .exp .hgroup h5:before {
+    color: #ddd;
+    content: "/";
+    left: 0;
+    left: 30px;
+    position: absolute;
+  }
+
+  .exp .hgroup h5 span.current {
+    font-style: italic;
+  }
+
+  .icon {
+    color: lightgray;
+    display: inline-block;
+  }
+}
