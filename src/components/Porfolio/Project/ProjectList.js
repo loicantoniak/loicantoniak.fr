@@ -7,7 +7,7 @@ export default function ProjectList(props) {
   const { name, category, image } = props;
 
   return (
-    <div className="portfolio-item col-md-4">
+    <div className="portfolio-item col-sm-5">
       <Link to={"/portfolio/" + name}>
         <div className="portfolio-column">
           <div className="portfolio-hover">

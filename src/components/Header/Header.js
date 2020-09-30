@@ -1,27 +1,37 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import "./Header.css";
 import TypeWriter from "./TypeWriter/TypeWriter";
-import DownloadButton from './Download/DownloadButton'
+import DownloadButton from "./Download/DownloadButton";
 import SocialIcons from "./SocialIcons/SocialIcons";
+import { connect } from "react-redux";
 
-export default function Header(props) {
-  const reverseClassName = props.reverse ? "reverse" : "";
+function Header(props) {
+
+  const { reverseClass } = props;
+
+  const reverse = reverseClass ? "reverse" : "";
 
   return (
-    <div className={"name-block " + reverseClassName}>
-      <div className={"name-block-container " + reverseClassName}>
+    <div className={"name-block " + reverse}>
+      <div className={"name-block-container " + reverse}>
         <h1>
           <span>Je m'appelle Loïc Antoniak</span>Développeur front-end
         </h1>
         <TypeWriter />
-        <DownloadButton/>
-        <SocialIcons/>
+        <DownloadButton />
+        <SocialIcons />
       </div>
     </div>
   );
 }
 
 Header.propTypes = {
-  reverse: PropTypes.bool
+  reverseClass: PropTypes.bool,
 };
+
+const mapStateToProps = (state) => ({
+  reverseClass: state.reverseClass,
+});
+
+export default connect(mapStateToProps, null)(Header);

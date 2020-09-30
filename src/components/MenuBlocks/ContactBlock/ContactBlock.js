@@ -1,11 +1,12 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import "./ContactBlock.css";
 import { Link } from "react-router-dom";
 
 export default function ContactBlock(props) {
+  const { add_reverse_and_init_burger } = props;
   return (
-    <Link to="/contact" onClick={props.onClick}>
+    <Link to="/contact" onClick={() => add_reverse_and_init_burger()}>
       <div className="contact-block menu-block">
         <div className="contact-block-container">
           <h2 className="contact menu-item">Contact</h2>
@@ -16,5 +17,5 @@ export default function ContactBlock(props) {
 }
 
 ContactBlock.propTypes = {
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };

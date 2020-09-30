@@ -3,11 +3,11 @@ import "./BurgerMenu.css";
 import PropTypes from "prop-types";
 
 export default function BurgerMenu(props) {
-  const { isOpen, setIsOpen } = props;
+  const { isOpen, open_burger } = props;
 
   return (
     <button
-      onClick={() => setIsOpen(!isOpen)}
+      onClick={() => open_burger()}
       className={isOpen ? "burger-button" : "cross-button"}
     >
       <div className="bar" />
@@ -19,5 +19,5 @@ export default function BurgerMenu(props) {
 
 BurgerMenu.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  setIsOpen: PropTypes.func.isRequired,
+  open_burger: PropTypes.func.isRequired,
 };

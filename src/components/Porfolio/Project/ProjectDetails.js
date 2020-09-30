@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Footer from '../../Footer/Footer'
-import './Project.css'
+import Footer from "../../Footer/Footer";
+import "./Project.css";
 
 export default function ProjectDetails(props) {
-  const { name, category, client, description, image, date } = props;
+  const { name, category, client, description, image, date, url } = props;
 
   return (
     <div className="content-blocks">
@@ -27,7 +27,9 @@ export default function ProjectDetails(props) {
           </div>
           <div className="project-media row">
             <div className="col-md-12">
-              <img alt="project illustration" src={image} />
+              <a href={url} title={name} target="blank">
+                <img alt="project illustration" src={image} />
+              </a>
             </div>
           </div>
         </div>

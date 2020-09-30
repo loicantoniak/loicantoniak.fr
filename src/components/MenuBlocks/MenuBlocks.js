@@ -1,22 +1,33 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import ResumeBlock from "./ResumeBlock/ResumeBlock";
 import PortfolioBlock from "./PortfolioBlock/PortfolioBlock";
 import ContactBlock from "./ContactBlock/ContactBlock";
 import "./MenuBlocks.css";
+import { connect } from "react-redux";
+import { actions } from "../../store/store";
 
 // This component represente the MenuBlock on the homePage
 
-export default function MenuBlocks(props) {
+function MenuBlocks(props) {
+
+  const { add_reverse_and_init_burger } = props;
+
   return (
     <div className="menu">
-      <ResumeBlock onClick={props.onClick}/>
-      <PortfolioBlock onClick={props.onClick}/>
-      <ContactBlock onClick={props.onClick}/>
+      <ResumeBlock add_reverse_and_init_burger={add_reverse_and_init_burger} />
+      <PortfolioBlock add_reverse_and_init_burger={add_reverse_and_init_burger} />
+      <ContactBlock add_reverse_and_init_burger={add_reverse_and_init_burger} />
     </div>
   );
 }
 
 MenuBlocks.propTypes = {
-  onClick: PropTypes.func
+  add_reverse_and_init_burger: PropTypes.func,
 };
+
+const mapDispatchToProps = {
+  add_reverse_and_init_burger: () => actions.add_reverse_and_init_burger(),
+};
+
+export default connect(null, mapDispatchToProps)(MenuBlocks);
