@@ -4,7 +4,7 @@ import Footer from "../../Footer/Footer";
 import "./Project.css";
 
 export default function ProjectDetails(props) {
-  const { name, category, client, description, image, date, url } = props;
+  const { name, category, client, description, image, date, url, link, technologies } = props;
 
   return (
     <div className="content-blocks">
@@ -24,6 +24,17 @@ export default function ProjectDetails(props) {
           </div>
           <div className="project-description">
             <p>{description}</p>
+          </div>
+          <div className="project-technology">
+          <span>Technologies utilisées :</span> 
+            {technologies.map((technology) => (
+              <li>{technology}</li>
+            ))}
+          </div>
+          <div className="link">
+            <a href={link} target="blank">
+              {link}
+            </a>
           </div>
           <div className="project-media row">
             <div className="col-md-12">
@@ -45,4 +56,8 @@ ProjectDetails.propTypes = {
   client: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
+  date: PropTypes.string,
+  url: PropTypes.string,
+  link: PropTypes.string,
+  technologies: PropTypes.array,
 };

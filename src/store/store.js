@@ -10,7 +10,6 @@ const actionTypes = {
   INIT_REVERSE_CLASS: "init_reverse_class",
   OPEN_BURGER: "open_burger",
   INIT_BURGER: "init_burger",
-  //Ajouter le reverse et init burger
   ADD_REVERSE_AND_INIT_BURGER: "add_reverse_and_init_burger",
 };
 

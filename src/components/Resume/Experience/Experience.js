@@ -1,18 +1,38 @@
 import React from "react";
-import FilterHdrIcon from '@material-ui/icons/FilterHdr';
-import "./Experience.css"
+import FilterHdrIcon from "@material-ui/icons/FilterHdr";
+import "./Experience.css";
 
 export default function Experience() {
   return (
     <div className="block-content">
       <h3 className="block-title">EXPERIENCES</h3>
       <div className="icon">
-        <FilterHdrIcon fontSize="large"/>
+        <FilterHdrIcon fontSize="large" />
       </div>
       <div className="timeline experience">
         <div className="row">
           <div className="col-md-12">
             <div className="exp-holder">
+              <div className="exp">
+                <div className="hgroup">
+                  <h4>
+                    <span>Développeur web</span>
+                  </h4>
+                  <h5>Septembre 2020 - Maintenant</h5>
+                </div>
+                <p>
+                  Divers projets personnels : refonte de mon site personnel avec
+                  React, Redux, Firebase, Material UI, NPM.
+                </p>
+                <p>
+                  Auto-formation sur Firebase, Material-UI, NodeJS, tests
+                  unitaires avec Jest
+                </p>
+                <p>
+                  Reproduction de divers sites : Tinder, Instagram, AirBnb sur
+                  React.
+                </p>
+              </div>
               <div className="exp">
                 <div className="hgroup">
                   <h4>

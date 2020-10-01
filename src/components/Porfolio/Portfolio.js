@@ -14,6 +14,7 @@ export default function Portfolio() {
   useEffect(() => {
     const unsubscribe = database
       .collection("project")
+      .orderBy("date", "desc")
       .onSnapshot((snapshot) =>
         setProjects(snapshot.docs.map((doc) => doc.data()))
       );

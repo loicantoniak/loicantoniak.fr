@@ -16,6 +16,7 @@ export default function Progress(props) {
     animation: ${anim} 5s;
     animation-fill-mode: forwards;
   `;
+
   return (
     <>
       <Bar role="progressbar" />

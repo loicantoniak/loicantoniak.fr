@@ -30,6 +30,8 @@ export default function RouteProjectDetails() {
           description={project.description}
           date={project.date}
           image={project.image}
+          link= {project.link}
+          technologies={project.technologies}
         />
       ))}
     </div>

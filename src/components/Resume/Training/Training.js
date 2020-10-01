@@ -1,12 +1,12 @@
 import React from "react";
-import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
 
 export default function Training() {
   return (
     <div className="block-content">
       <h3 className="block-title">FORMATIONS</h3>
       <div className="icon">
-        <AccountBalanceIcon fontSize="large"/>
+        <AccountBalanceIcon fontSize="large" />
       </div>
       <div className="timeline education">
         <div className="row">
@@ -22,10 +22,14 @@ export default function Training() {
                   </h5>
                 </div>
                 <p>
-                  Bac + 2, spécialisation en développement web et applications.
-                  Différents modules : Administration de BDD - NodeJs&nbsp; -
-                  ReactJs - Symfony&nbsp; - SQL - Droit - Gestion de projet -
-                  Utilisation de la méthode Agile.&nbsp;
+                  Bac + 2 en informatique, spécialisation en développement web
+                  et applications.
+                </p>
+                <p>Langages utilisés : HTML - CSS - Javascript - PHP</p>
+                <p>
+                  Administration de BDD - NodeJs - ReactJs - Redux - React
+                  Native - Symfony - SQL - Droit informatique - Gestion de projet -
+                  Utilisation de la méthode Agile.
                 </p>
                 <p>
                   Projet d'équipe&nbsp; : création d'un site de tutoriels zéro

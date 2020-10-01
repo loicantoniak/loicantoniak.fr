@@ -1,9 +1,29 @@
-.project-head span {
-    color: #333;
-    font-weight: 400;
-    margin-right: 5px;
+.project-head span,
+.project-technology span {
+  color: #333;
+  font-weight: 400;
+  margin-right: 5px;
 }
 
 .project-description {
-    margin-top: 30px;
+  margin-top: 30px;
+}
+
+.project-technology {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.project-technology li {
+  margin-bottom: 0;
+  margin-left : 3rem
+}
+
+.link {
+  margin-bottom: 20px;
+}
+
+.link a {
+  color: #333;
+  font-weight: 400;
 }
