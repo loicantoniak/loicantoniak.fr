@@ -1,5 +1,62 @@
-@media (max-width: 1499px) {
+@media (max-width: 399px) {
+  .about-block,
+  .portfolio-block,
+  .contact-block {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: table;
+    left: 0;
+    top: 381px;
+    z-index: 3;
+  }
 
+  .about-block {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  h2.menu-item {
+    position: relative;
+    color: #fff;
+    margin: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    transition: all 1s ease-out;
+  }
+}
+
+@media (max-width: 350px) {
+  .about-block,
+  .portfolio-block,
+  .contact-block {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: table;
+    left: 0;
+    top: 375px;
+    z-index: 3;
+  }
+
+  .about-block {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  h2.menu-item {
+    position: relative;
+    color: #fff;
+    margin: 19px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 1s ease-out;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 1499px) {
   .about-block,
   .portfolio-block,
   .contact-block {
@@ -77,12 +134,6 @@
   }
 }
 
-/*-------------------------------------------------------------------
-
-                        RESPONSIVE
-
--------------------------------------------------------------------*/
-
 @media (min-width: 1500px) {
   .menu-block {
     position: absolute;
@@ -134,5 +185,34 @@
     height: 1px;
     background: #fff;
     transition: all 0.5s ease;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 550px) {
+  .about-block,
+  .portfolio-block,
+  .contact-block {
+    position: relative;
+    width: 60%;
+    height: auto;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: table;
+    left: 60%;
+    top: 0;
+    z-index: 3;
+  }
+
+  h2.menu-item {
+    position: relative;
+    color: #fff;
+    margin: 32px;
+    font-size: 24px;
+    font-weight: 600;
+    transition: all 1s ease-out;
+  }
+
+  h2.menu-item:before, h2.menu-item:after  {
+    display: none;
   }
 }

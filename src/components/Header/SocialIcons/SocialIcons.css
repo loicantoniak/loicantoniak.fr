@@ -1,31 +1,30 @@
 .social {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .social li {
-    display: inline-block;
-    margin-right: 15px;
-    text-align: center;
+  display: inline-block;
+  margin-right: 15px;
+  text-align: center;
 }
 
 .social a {
-    border: 2px solid #FFF;
-    color: #FFF;
-    display: inline-block;
-    height: 35px;
-    width: 35px;
-    transition: all 0.5s;
-    line-height: 32px;
-    font-size: 12px;
+  border: 2px solid #fff;
+  color: #fff;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  transition: all 0.5s;
+  line-height: 32px;
+  font-size: 12px;
 }
 
 .social a:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 2px solid transparent;
-    color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid transparent;
+  color: #333;
 }
-
 
 /*-------------------------------------------------------------------
 
@@ -34,30 +33,48 @@
 -------------------------------------------------------------------*/
 
 @media (min-width: 1500px) {
-    .social {
-        text-align: left;
-    }
-    
-    .social li {
-        display: inline-block;
-        margin-right: 1%;
-        text-align: center;
-    }
-    
-    .social a {
-        border: 2px solid #FFF;
-        color: #FFF;
-        display: inline-block;
-        height: 35px;
-        width: 35px;
-        transition: all 0.5s;
-        line-height: 32px;
-        font-size: 12px;
-    }
-    
-    .social a:hover {
-        background-color: rgba(255, 255, 255, 0.7);
-        border: 2px solid transparent;
-        color: #333;
-    }
+  .social {
+    text-align: left;
   }
+
+  .social li {
+    display: inline-block;
+    margin-right: 1%;
+    text-align: center;
+  }
+
+  .social a {
+    border: 2px solid #fff;
+    color: #fff;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    transition: all 0.5s;
+    line-height: 32px;
+    font-size: 12px;
+  }
+
+  .social a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid transparent;
+    color: #333;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 550px) {
+  .social {
+    margin-top: 12px;
+    text-align: left;
+  }
+
+  .social a {
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    width: 31px;
+    transition: all 0.5s;
+    line-height: 30px;
+    font-size: 10px;
+  }
+}

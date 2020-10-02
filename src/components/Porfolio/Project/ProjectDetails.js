@@ -27,8 +27,8 @@ export default function ProjectDetails(props) {
           </div>
           <div className="project-technology">
           <span>Technologies utilisées :</span> 
-            {technologies.map((technology) => (
-              <li>{technology}</li>
+            {technologies.map((technology, i) => (
+              <li key={i}>{technology}</li>
             ))}
           </div>
           <div className="link">

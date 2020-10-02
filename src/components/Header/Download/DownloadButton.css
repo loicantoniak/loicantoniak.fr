@@ -1,4 +1,5 @@
 /* Buttons */
+
 .downloadButton {
   text-align: center;
   margin-top: 15px;
@@ -6,8 +7,8 @@
 
 .btn-download {
   border: 2px solid #fff;
-  font-size: 16px;
-  padding: 15px 25px;
+  font-size: 12px;
+  padding: 13px 22px;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
@@ -41,11 +42,9 @@
 }
 
 .btn-download > span {
-    z-index: 2;
-    position: relative;
+  z-index: 2;
+  position: relative;
 }
-
-
 
 /*-------------------------------------------------------------------
 
@@ -56,5 +55,21 @@
 @media (min-width: 1500px) {
   .downloadButton {
     text-align: left;
+  }
+}
+@media (min-width: 400px), (min-height: 700) {
+  .btn-download {
+    font-size: 16px;
+    padding: 15px 25px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 550px) {
+  .downloadButton {
+    text-align: left;
+}
+  .btn-download {
+    font-size: 9px;
+    padding: 13px 21px;
   }
 }

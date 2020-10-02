@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import Form from "./Form/Form";
 import Information from "./Information/Information";
+import Map from "./Map/Map";
 
 export default function Contact() {
   return (
@@ -18,6 +19,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
+        <Map />
       </div>
     </div>
   );

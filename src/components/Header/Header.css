@@ -1,10 +1,12 @@
 .name-block {
   position: absolute;
   z-index: 1;
+  margin-top: 15px;
 }
 
 .name-block-container h1 {
-  font-size: 50px;
+  font-size: 37px;
+  line-height: 1.6;
 }
 
 .name-block-container h1,
@@ -35,36 +37,78 @@ h1 {
   text-transform: capitalize;
 }
 
-/*Reverse*/
-
-.name-block.reverse {
-  position: absolute;
-  -ms-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  width: 30%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border: none;
-  display: table;
-}
-
-.name-block-container.reverse {
-  display: table-cell;
-  height: 100%;
-  vertical-align: middle;
-  -ms-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  padding: 0 30px;
-}
-
 /*-------------------------------------------------------------------
 
                         RESPONSIVE
 
 -------------------------------------------------------------------*/
+
+@media (min-width: 400px) {
+  .name-block-container h1 {
+    font-size: 50px;
+    line-height: 1.8;
+  }
+
+  .name-block-container h1,
+  .name-block-container h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h1 {
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .name-block-container h2 {
+    font-size: 24px;
+    min-height: 26px;
+  }
+
+  .name-block-container h1 span {
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    text-transform: capitalize;
+  }
+
+  /*Reverse*/
+
+  .name-block.reverse {
+    position: absolute;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    width: 30%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: none;
+    display: table;
+  }
+
+  .name-block-container.reverse {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .name-block {
+    left: 25%;
+  }
+}
+
 @media (min-width: 1500px) {
   .name-block {
     position: absolute;
@@ -77,6 +121,7 @@ h1 {
     z-index: 1;
     left: 245px;
     top: 137px;
+    margin-top: 0;
   }
   .name-block-container {
     display: table-cell;
@@ -140,7 +185,7 @@ h1 {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     padding: 0 30px;
-  } 
+  }
 }
 
 @media (min-width: 708px) and (max-width: 1199px) {
@@ -149,8 +194,29 @@ h1 {
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1499px) {
+@media (orientation: landscape) and (max-height: 550px)  {
   .name-block {
-    left: 25%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 15px;
+  }
+
+  .name-block-container {
+    width: 60%;
+  }
+
+  .name-block-container h1 {
+    font-size: 35px;
+    line-height: 1.4;
+  }
+
+  .name-block-container h1,
+  .name-block-container h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: left;
   }
 }
