@@ -2,6 +2,7 @@ import React from "react";
 import RoomOutlinedIcon from "@material-ui/icons/RoomOutlined";
 import PhoneOutlinedIcon from "@material-ui/icons/PhoneOutlined";
 import MailOutlineOutlinedIcon from "@material-ui/icons/MailOutlineOutlined";
+import "./Information.css"
 
 export default function Information() {
   return (

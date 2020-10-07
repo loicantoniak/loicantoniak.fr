@@ -22,7 +22,7 @@ export default function Experience() {
                 </div>
                 <p>
                   Divers projets personnels : refonte de mon site personnel avec
-                  React, Redux, Firebase, Material UI, NPM.
+                  React, Redux, Firebase, Material UI, NodeJS.
                 </p>
                 <p>
                   Auto-formation sur Firebase, Material-UI, NodeJS, tests
@@ -149,7 +149,7 @@ export default function Experience() {
               <div className="exp">
                 <div className="hgroup">
                   <h4>
-                    <span>Evènementiel</span> @IUT - Reims
+                    <span>Evénementiel</span> @IUT - Reims
                   </h4>
                   <h5>Janv. 2013-Fév. 2013</h5>
                 </div>

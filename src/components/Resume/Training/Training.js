@@ -29,11 +29,11 @@ export default function Training() {
                 <p>
                   Administration de BDD - NodeJs - ReactJs - Redux - React
                   Native - Symfony - SQL - Droit informatique - Gestion de projet -
-                  Utilisation de la méthode Agile.
+                  Utilisation de la méthode Agile - Versionning avec Git. 
                 </p>
                 <p>
-                  Projet d'équipe&nbsp; : création d'un site de tutoriels zéro
-                  déchet (Symfony, React, Api Platform, Easy Admin).&nbsp;
+                  Projet d'équipe : création d'un site de tutoriels zéro
+                  déchet (Symfony, React, Api Platform, Easy Admin).
                 </p>
               </div>
 

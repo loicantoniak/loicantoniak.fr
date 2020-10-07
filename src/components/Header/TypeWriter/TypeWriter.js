@@ -16,7 +16,8 @@ export default function TypeWriter() {
           startDelay={200}
           cursorColor="#fff"
           multiText={[
-            "HTML - CSS - JAVASCRIPT",
+            "HTML - CSS",
+            "JAVASCRIPT",
             "GIT",
             "PHP - SYMFONY",
             "REDUX - JEST",

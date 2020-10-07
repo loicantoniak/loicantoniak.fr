@@ -1,0 +1,24 @@
+.contact-content {
+    display: table;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .contact-icon {
+    width: 60px;
+    vertical-align: top;
+    font-size: 30px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .contact-details,
+  .contact-icon {
+    display: table-cell;
+  }
+  
+  .contact-details h5,
+  .contact-details p {
+    margin-bottom: 0;
+  }
+  

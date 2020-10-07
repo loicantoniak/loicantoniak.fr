@@ -12,8 +12,8 @@ export default function Profil() {
       <p>
         Expérimenté en gestion de projet dans le domaine des Ressources Humaines
         pendant près de 8 ans, j'ai décidé de me reconvertir dans le
-        développement web. Bac + 2 en informatique, spécialisé en développement
-        web et mobile - validé en 2020, j'ai une forte affinitée avec le
+        développement web. <br/>Bac + 2 en informatique validé 2020, spécialisé en développement
+        web et mobile.<br/>J'ai une forte affinitée avec le
         développement côté client.
       </p>
       <div className="info-list">

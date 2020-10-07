@@ -14,12 +14,12 @@ export default function Skills() {
 
       <label className="progress-bar-label">JAVASCRIPT</label>
       <div className="progress">
-        <Progress width={70} />
+        <Progress width={80} />
       </div>
 
       <label className="progress-bar-label">REACT - REDUX</label>
       <div className="progress">
-        <Progress width={60} />
+        <Progress width={70} />
       </div>
 
       <label className="progress-bar-label">LESS - SASS</label>
@@ -29,7 +29,7 @@ export default function Skills() {
 
       <label className="progress-bar-label">PHP - SYMFONY</label>
       <div className="progress">
-        <Progress width={50} />
+        <Progress width={60} />
       </div>
 
       <label className="progress-bar-label">WORDPRESS</label>
